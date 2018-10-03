@@ -6,7 +6,6 @@ function Chatbar(props) {
 
     const onKeyPress = event => {
         if (event.key === "Enter") {
-            console.log(props);
             props.addMessage(event.target.value);
             event.target.value = '';
         }
@@ -14,7 +13,6 @@ function Chatbar(props) {
 
     const onUsernamePress = event => {
         if (event.key === "Enter") {
-            console.log(props);
             props.updateUser(event.target.value);
         }
     }
