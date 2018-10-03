@@ -12,10 +12,17 @@ function Chatbar(props) {
         }
     }
 
+    const onUsernamePress = event => {
+        if (event.key === "Enter") {
+            console.log(props);
+            props.updateUser(event.target.value);
+        }
+    }
+
     return (
         <div>
       <footer className="chatbar">
-        <input defaultValue={currentUser.name} className="chatbar-username" placeholder="User name (optional)" />
+        <input defaultValue={currentUser.name} className="chatbar-username" placeholder="User name (optional)" onKeyPress={onUsernamePress} />
         <input className="chatbar-message" placeholder="Type a message and hit ENTER" onKeyPress={onKeyPress} />
       </footer>
       </div>
@@ -23,4 +30,3 @@ function Chatbar(props) {
 
 }
 export default Chatbar;
-
