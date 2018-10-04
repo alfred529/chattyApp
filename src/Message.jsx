@@ -17,7 +17,5 @@ function Messages(props) {
         );
     }
 
-
-
 }
 export default Messages;
