@@ -3,7 +3,7 @@ Chatty App
 
 A minimal and light dev environment for ReactJS.
 
-###npm r Final Product
+### Final Product
 
 ![Screenshot of chattyApp with 2 people](https://raw.githubusercontent.com/alfred529/chattyApp/master/docs/chattyApp_2people.png)
 
